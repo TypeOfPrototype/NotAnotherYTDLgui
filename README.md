@@ -1,7 +1,8 @@
 # NotAnotherYTDLgui
 Extremely Simple Youtube-dl Gui using Gooey https://github.com/chriskiehl/Gooey   
  &amp; ready to be packaged with Pyinstaller https://github.com/pyinstaller/pyinstaller    
- 
+The heavy lifting from the wonderful Youtube-dl https://github.com/ytdl-org/youtube-dl
+  
  The packaging allows it to be self contained and distributed to friends/family that need something simple. 0 install as it is all included in the packaged binary for the respective OS courtesy of pyinstaller.  
    
 Enter URL, Provide Destination folder for download using either Browse button file picker or typed  
@@ -13,19 +14,25 @@ and lastly click format dropdown to select Video or Audio (Best Quality MP4/MP3 
 
 ## Dependencies **Important - Please install latest youtube-dl from github as pip seems to have issues
 https://github.com/ytdl-org/youtube-dl/issues/31530#issuecomment-1435477247  
-  
-pip install --upgrade --force-reinstall "git+https://github.com/ytdl-org/ytdl-nightly.git"  
-& pip install Gooey  
-  
-**Optionally if you'd like to package also install pyinstaller  
+```  
+pip install --upgrade --force-reinstall "git+https://github.com/ytdl-org/ytdl-nightly.git"
+```
+```
+pip install Gooey  
+```  
+```
 pip install pyinstaller    
-  
+``` 
 & ffmpeg binaries https://ffmpeg.org/download.html  
 
 ## Packaging 
 from the project folder ensure ffmpeg subfolder has unpacked ffmpeg binaries  
+```
+(Windows)
+pyinstaller NotAnotherYTDLgui.py --add-binary="ffmpeg/*;ffmpeg" --onefile
+(Linux)  (That Colon/Semi Colon...)
+pyinstaller NotAnotherYTDLgui.py --add-binary="ffmpeg/*:ffmpeg" --onefile  
   
-pyinstaller NotAnotherYTDLgui.py --add-binary="ffmpeg/*;ffmpeg" --onefile  (Windows) 
-pyinstaller NotAnotherYTDLgui.py --add-binary="ffmpeg/*:ffmpeg" --onefile  (Linux)  (That Colon/Semi Colon...)
-  
+```
+
 This will produce a single binary to use depending on your OS (Currently tested on Windows & Ubuntu)
