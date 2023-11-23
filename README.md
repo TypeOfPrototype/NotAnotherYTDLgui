@@ -1,4 +1,6 @@
 # NotAnotherYTDLgui
+![YTICO](https://github.com/TypeOfPrototype/NotAnotherYTDLgui/assets/37871605/eb8c99b0-5736-4561-9f2e-f384689bdb44)
+
 Extremely Simple Youtube-dl Gui using Gooey https://github.com/chriskiehl/Gooey   
  &amp; ready to be packaged with Pyinstaller https://github.com/pyinstaller/pyinstaller    
 The heavy lifting from the wonderful Youtube-dl https://github.com/ytdl-org/youtube-dl
