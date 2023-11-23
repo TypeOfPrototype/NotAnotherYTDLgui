@@ -1,8 +1,7 @@
 # NotAnotherYTDLgui
 Extremely Simple Youtube-dl Gui using Gooey https://github.com/chriskiehl/Gooey   
  &amp; ready to be packaged with Pyinstaller https://github.com/pyinstaller/pyinstaller    
-   
- The python script itself will load a very simple gui if the python dependencies are already installed  
+ 
  The packaging allows it to be self contained and distributed to friends/family that need something simple. 0 install as it is all included in the packaged binary for the respective OS courtesy of pyinstaller.  
    
 Enter URL, Provide Destination folder for download using either Browse button file picker or typed  
@@ -26,6 +25,7 @@ pip install pyinstaller
 ## Packaging 
 from the project folder ensure ffmpeg subfolder has unpacked ffmpeg binaries  
   
-pyinstaller NotAnotherYTDLgui.py --add-binary="ffmpeg/*;ffmpeg" --onefile   
+pyinstaller NotAnotherYTDLgui.py --add-binary="ffmpeg/*;ffmpeg" --onefile  (Windows) 
+pyinstaller NotAnotherYTDLgui.py --add-binary="ffmpeg/*:ffmpeg" --onefile  (Linux)  (That Colon/Semi Colon...)
   
-This will produce a single binary to use depending on your OS (Currently tested on windows only...)
+This will produce a single binary to use depending on your OS (Currently tested on Windows & Ubuntu)
