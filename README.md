@@ -15,7 +15,7 @@ To use this project, run the NotAnotherYTDLgui(.exe) binary file. You will see a
 
 Enter the URL of the video or playlist you want to download in the YouTube URL field. Choose the destination folder where you want to save the files. Select the format of the output: Video(MP4) or Audio(MP3). Click the Start button to begin the download.
 
-You will see the progress and status of the download in the console. When the download is finished, you will see a message like this:
+You will see the progress and status of the download in the console. When the download is finished, you will see a message like this:  
 ![NAYTDLGUIStatus](https://github.com/TypeOfPrototype/NotAnotherYTDLgui/assets/37871605/22e73539-bac4-4a43-a6ba-de388b8bb3d6)  
 You can find the downloaded files in the destination folder.
 
