@@ -1,8 +1,8 @@
 # Import the required modules
 from gooey import Gooey, GooeyParser
 import youtube_dl
-import os # Add this line
-import sys # Add this line
+import os
+import sys
 
 # Define the Gooey decorator
 @Gooey(program_name='YouTube Downloader', 
